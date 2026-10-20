@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>संदर्भ | Unique Finds, New Stories</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement">
+        Discover unique finds. Give old things new stories.
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <a href="#" class="logo">संदर्भ<span>।</span></a>
+
+        <nav class="nav-links">
+            <a href="#discover">Discover</a>
+            <a href="#categories">Categories</a>
+            <a href="#products">Shop</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="#search">Search</a>
+            <a href="#wishlist">Wishlist</a>
+            <a href="#account">Account</a>
+            <a href="#sell" class="sell-btn">Sell an item</a>
+        </div>
+
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section" id="search">
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Search watches, clothing, antiques..."
+        >
+
+        <button id="searchButton">Search</button>
+
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero" id="discover">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">PRE-LOVED. RE-DISCOVERED.</p>
+
+            <h1>
+                Find things<br>
+                that mean something.
+            </h1>
+
+            <p>
+                Unique pieces, vintage treasures and
+                objects with a story to tell.
+            </p>
+
+            <a href="#products" class="primary-btn">
+                Explore the collection ↗
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="images/collection.jpeg"
+                alt="Vintage and unique collection"
+            >
+        </div>
+
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section" id="categories">
+
+        <div class="section-heading">
+            <h2>Explore by category</h2>
+            <p>Something different for everyone.</p>
+        </div>
+
+        <div class="category-grid">
+
+            <button class="category" data-category="Watches">
+                <img src="images/watches.jpeg" alt="Watches">
+                <span>Watches</span>
+            </button>
+
+            <button class="category" data-category="Clothing">
+                <img src="images/clothing.jpeg" alt="Clothing">
+                <span>Clothing</span>
+            </button>
+
+            <button class="category" data-category="Collectibles">
+                <img src="images/decor.jpeg" alt="Collectibles">
+                <span>Collectibles</span>
+            </button>
+
+            <button class="category" data-category="Antiques">
+                <img src="images/book.jpeg" alt="Antiques">
+                <span>Antiques</span>
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Trending Banner -->
+    <section class="trending">
+
+        <div>
+            <p class="eyebrow">THE GOOD FINDS</p>
+            <h2>Not new. Just special.</h2>
+        </div>
+
+        <a href="#products">Discover more ↗</a>
+
+    </section>
+
+    <!-- Product Section -->
+    <section class="section" id="products">
+
+        <div class="section-heading">
+            <h2>Fresh finds</h2>
+            <p>Unique pieces waiting for a new home.</p>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+            <!-- Product 1 -->
+            <article class="product-card" data-category="Watches">
+
+                <div class="product-image">
+                    <img src="images/watch.jpeg" alt="Vintage wristwatch">
+
+                    <button class="wishlist" aria-label="Add watch to wishlist">
+                        ♡
+                    </button>
+                </div>
+
+                <p class="product-category">Vintage Watches</p>
+                <h3>Classic Vintage Watch</h3>
+                <p class="condition">Pre-owned · Good condition</p>
+                <p class="price">₹1,499</p>
+
+            </article>
+
+            <!-- Product 2 -->
+            <article class="product-card" data-category="Clothing">
+
+                <div class="product-image">
+                    <img src="images/jacket.jpeg" alt="Vintage jacket">
+
+                    <button class="wishlist" aria-label="Add jacket to wishlist">
+                        ♡
+                    </button>
+                </div>
+
+                <p class="product-category">Vintage Clothing</p>
+                <h3>Retro Denim Jacket</h3>
+                <p class="condition">Pre-owned · Very good</p>
+                <p class="price">₹999</p>
+
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product-card" data-category="Collectibles">
+
+                <div class="product-image">
+                    <img src="images/camera.jpeg" alt="Retro camera">
+
+                    <button class="wishlist" aria-label="Add camera to wishlist">
+                        ♡
+                    </button>
+                </div>
+
+                <p class="product-category">Collectibles</p>
+                <h3>Classic Film Camera</h3>
+                <p class="condition">Pre-owned · Good condition</p>
+                <p class="price">₹2,299</p>
+
+            </article>
+
+            <!-- Product 4 -->
+            <article class="product-card" data-category="Antiques">
+
+                <div class="product-image">
+                    <img src="images/antique.jpeg" alt="Antique decorative item">
+
+                    <button class="wishlist" aria-label="Add antique to wishlist">
+                        ♡
+                    </button>
+                </div>
+
+                <p class="product-category">Antiques</p>
+                <h3>Vintage Collectible Piece</h3>
+                <p class="condition">Pre-owned · See details</p>
+                <p class="price">₹1,799</p>
+
+            </article>
+
+        </div>
+
+        <p id="emptyMessage" hidden>No items found.</p>
+
+    </section>
+
+    <!-- Sell Section -->
+    <section class="sell-banner" id="sell">
+
+        <h2>Have something worth discovering?</h2>
+
+        <p>Give your pre-loved pieces a new home.</p>
+
+        <a href="#account" class="primary-btn">
+            Start selling ↗
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <a href="#" class="logo">संदर्भ<span>।</span></a>
+
+        <p>Unique things. Stories worth keeping.</p>
+
+        <div class="footer-links">
+            <a href="#discover">About</a>
+            <a href="#products">Shop</a>
+            <a href="#sell">Sell with us</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <p>© 2026 संदर्भ. College Minor Project.</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
